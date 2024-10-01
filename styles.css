@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar-custom {
+    background-color: #0ABAB5;
+}
+
+.navbar-custom .navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-custom .navbar-brand .brand-name {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.navbar-custom .nav-link {
+    color: white !important;
+    margin-right: 15px;
+    font-size: 1rem;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #ddd !important;
+}
+
+/* Sticky Navbar */
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+/* Home Section */
+#home {
+    height: 100vh;
+    background-color: #0ABAB5;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+#home .logo2 {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 100px;
+    height: 100px;
+    background-image: url('image/Logo1.png'); /* Replace with your masked logo image */
+    background-size: cover;
+    -webkit-mask-image: url('image/Logo1.png'); /* Masking the logo */
+    mask-image: url('image/Logo1.png');
+    background-color: rgb(212, 102, 102);
+}
+
+#home h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid white;
+    animation: blink-caret 360s step-end infinite;
+}
+
+/* Auto-typing Animation Cursor */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+}
+
+/* Snowfall Animation */
+.snowflake {
+    position: absolute;
+    top: 0;
+    color: white;
+    user-select: none;
+    z-index: 1000;
+    font-size: 1em;
+    pointer-events: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+/* About Us Section */
+#about {
+    background-color: white;
+    padding: 60px 0;
+}
+
+/* Services Section */
+#services {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.card-slider {
+    overflow: hidden;
+    position: relative;
+}
+
+.card-deck {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card-slider .card {
+    border: 3px solid #0D98BA;
+    margin: 10px;
+    flex: 0 0 25%;
+    transition: transform 0.3s;
+}
+
+.card-slider .card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Us Section */
+#contact {
+    background-color: #0ABAB5 ;
+    padding: 60px 0;
+}
+
+#contact ul {
+    font-size: 1.1rem;
+}
+
+#contact a:hover {
+    color: #ddd;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .card-slider .card {
+        flex: 0 0 33.3333%;
+    }
+}
+
+@media (max-width: 992px) {
+    .card-slider .card {
+        flex: 0 0 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-slider .card {
+        flex: 0 0 100%;
+    }
+}
+
+/* Navbar Toggler Icon Color */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' 
+    xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29)' 
+    stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22' 
+    /%3E%3C/svg%3E");
+}
+
