@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palcae</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts - Nunito -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="image/Logo2.png">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="image/Logo1.png" alt="Logo 1" class="me-2" width="40" height="40">
+                <h1 class="h1 mb-0 brand-name">Palcae.</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    
+    <section id="home">
+        <div class="logo2"></div>
+        <h1>Welcome to</h1>
+        <h1 id="typed-text">Palcae.</h1>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+            <p>We are a group of passionate young individuals dedicated to making a difference in the lives of elderly family members by providing essential support services. With our collective energy and compassion, we aim to ensure that the elderly receive the care, comfort, and assistance they need in their daily lives. We believe that every senior deserves to age with dignity, and our mission is to help them do so by offering tailored services that cater to their specific needs.</p>
+            <p>Our services include professional hospital caretakers who provide compassionate care during critical times, ensuring that the elderly are never alone when they need assistance the most. Whether it’s managing medications, offering emotional support, or providing companionship, our caretakers are committed to delivering high-quality service with a personal touch. We understand the importance of health and wellbeing, which is why we prioritize the safety and comfort of our clients above all else.</p>
+            <p>In addition to hospital caretakers, we offer a range of transportation services, including house drivers and drivers with cars. Our reliable and experienced drivers are available to help elderly family members get to their appointments, run errands, or simply enjoy a day out. We understand the challenges that come with mobility as people age, and our goal is to ensure they remain independent and active, without the worry of driving or commuting..</p>
+            <p>Our team is driven by the values of respect, care, and professionalism. We take pride in the relationships we build with the families we serve, treating every client as a member of our own community. We know that entrusting someone with the care of a loved one is a big decision, and we are committed to earning that trust through exceptional service and dedication.</p>
+            <p>At the heart of our initiative is the belief that the elderly deserve our love, care, and attention. We are excited to continue growing and helping more families find peace of mind, knowing that their elderly loved ones are in good hands. Through our combined efforts, we strive to create a positive impact on the lives of the elderly, fostering a sense of community and support that extends beyond the services we provide.</p>
+        </div>
+    </section>
+
+    <!-- Service Overview Carousel -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <!-- Carousel -->
+            <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Hospital Caretaker"></button>
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1" aria-label="House Driver"></button>
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="2" aria-label="Driver with Car"></button>
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="3" aria-label="Leisure Holidays"></button>
+                </div>
+
+                <!-- Carousel Inner -->
+                <div class="carousel-inner">
+                    <!-- Service 1: Hospital Caretaker -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card service-card text-center p-3">
+                                    <div class="card-body">
+                                        <i class="fas fa-heartbeat fa-3x mb-3 text-primary"></i>
+                                        <h5 class="card-title">Hospital Caretaker</h5>
+                                        <p class="card-text">Professional and compassionate care for your loved ones.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 2: House Driver -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card service-card text-center p-3">
+                                    <div class="card-body">
+                                        <i class="fas fa-car fa-3x mb-3 text-primary"></i>
+                                        <h5 class="card-title">House Driver</h5>
+                                        <p class="card-text">Reliable and experienced drivers for your household needs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 3: Driver with Car -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card service-card text-center p-3">
+                                    <div class="card-body">                                                            
+                                        <i class="fas fa-taxi fa-3x mb-3 text-primary"></i>
+                                        <h5 class="card-title">Driver with Car</h5>
+                                        <p class="card-text">Comfortable and safe transportation with your personal vehicle.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 4: Leisure Holidays -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card service-card text-center p-3">
+                                    <div class="card-body">
+                                        <i class="fas fa-umbrella-beach fa-3x mb-3 text-primary"></i>
+                                        <h5 class="card-title">Leisure Holidays</h5>
+                                        <p class="card-text">Unforgettable holiday experiences tailored to your preferences.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- End Carousel -->
+        </section>                                                                                                                                                      
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <strong>Palcae Facility Services</strong>
+                        <li><strong>Address:</strong>Deepthi Junction,Melambara PO,Erattupetta</li>
+                        <li><strong>Pincode:</strong> 686579</li>
+                        <li><strong>Phone:</strong> +91-7994838008,+91-7994898008</li>
+                        <li><strong>Email:</strong> Customercare@palcae.com</li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="https://facebook.com" target="_blank" class="text-white me-3" aria-label="Facebook">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="https://l.instagram.com/?u=http%3A%2F%2Fwa.me%2F917994838008&e=AT055UwTcuFfvMMLqh1rzVDgw7mOL9A9rogRDs0CFzsxICXG3b19RwZ3RTQosyTr6nIWNuee3mogTxTNd2c-2L6WPYkHWYtAlEqrr3hJ5qJ4jfH9" target="_blank" class="text-white me-3" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp fa-2x"></i>
+                        </a>
+                        <a href="https://www.instagram.com/palcaeltd/" target="_blank" class="text-white" aria-label="Instagram">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>This site designed and developed for Palcae by Chris Tom.</p>
+        <p> &copy; Palcae. 2024 All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Typed.js for Auto-typing Animation -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
